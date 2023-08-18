@@ -135,7 +135,7 @@ html{
 }
 .showcase .navbar-bottom .brand-left{
     color: #55BA53;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.5s ease;
@@ -681,4 +681,71 @@ html{
     opacity: 1;
     pointer-events: auto;
     bottom: 30px;
+}
+
+/*==================================*/
+
+/* Media Queries for Tablets */
+@media screen and (max-width: 1024px) {
+    /* Navbar */
+    .showcase .navbar-top {
+        padding: 0 20px;
+    }
+    /* ... Other adjustments ... */
+    
+    /* Showcase section */
+    .showcase .showcase-content {
+        margin-top: 10%;
+        padding: 0 30px;
+    }
+    /* ... Other adjustments ... */
+    
+    /* Services section */
+    #services .items {
+        flex-direction: column;
+    }
+    /* ... Other adjustments ... */
+    
+    /* Goals section */
+    /* ... Adjustments for smaller screens ... */
+    
+    /* ... Other sections ... */
+}
+
+/*========================================*/
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .showcase .navbar-top {
+        padding: 0 15px;
+    }
+    .showcase .left li a {
+        padding: 5px 10px;
+    }
+    /* ... Other adjustments ... */
+    
+    /* Showcase section */
+    .showcase .showcase-content {
+        margin-top: 20%;
+        padding: 0 20px;
+    }
+    .showcase .showcase-content h1 {
+        font-size: 40px;
+    }
+    /* ... Other adjustments ... */
+    
+    /* Services section */
+    #services .items {
+        flex-direction: column;
+    }
+    .items .item {
+        width: 100%;
+    }
+    /* ... Other adjustments ... */
+    
+    /* Goals section */
+    /* ... Adjustments for smaller screens ... */
+    
+    /* ... Other sections ... */
 }
