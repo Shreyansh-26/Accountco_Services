@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimonials | Accountco Services</title>
+        <link rel="stylesheet" href="C:\Users\willi\OneDrive\Desktop\Accountco services\testi.css">
+        <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Testimonials</h1>
+
+            <div class="container">
+                <div class="indicator">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+                <div class="testimonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, assumenda ab, omnis incidunt quibusdam iusto eius, dicta neque itaque molestiae voluptates autem aliquid. Laboriosam repellendus excepturi iusto dolorem deleniti illum!
+                            </p>
+                            <h3>Nikita</h3>
+                            <p>Zara Inc.</p>
+    
+                        </div>
+                        <div class="user-img">
+                            <img src="images/1.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, assumenda ab, omnis incidunt quibusdam iusto eius, dicta neque itaque molestiae voluptates autem aliquid. Laboriosam repellendus excepturi iusto dolorem deleniti illum!
+                            </p>
+                            <h3>Kumar</h3>
+                            <p>Optic Inc.</p>
+    
+                        </div>
+                        <div class="user-img">
+                            <img src="images/2.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, assumenda ab, omnis incidunt quibusdam iusto eius, dicta neque itaque molestiae voluptates autem aliquid. Laboriosam repellendus excepturi iusto dolorem deleniti illum!
+                            </p>
+                            <h3>Manglam</h3>
+                            <p>Secret LLC</p>
+    
+                        </div>
+                        <div class="user-img">
+                            <img src="images/3.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, assumenda ab, omnis incidunt quibusdam iusto eius, dicta neque itaque molestiae voluptates autem aliquid. Laboriosam repellendus excepturi iusto dolorem deleniti illum!
+                            </p>
+                            <h3>Fizan</h3>
+                            <p>Hello Inc</p>
+    
+                        </div>
+                        <div class="user-img">
+                            <img src="images/4.jpg">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <script>
+
+            var btn = document.getElementsByClassName('btn'); 
+            var slide = document.getElementById('slide');
+
+            btn[0].onclick = function(){
+                slide.style.transform = 'translatex(0px)';
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove('active');
+                }
+                this.classList.add('active');
+            }
+
+            btn[1].onclick = function(){
+                slide.style.transform = 'translatex(-800px)';
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove('active');
+                }
+                this.classList.add('active');
+            }
+
+            btn[2].onclick = function(){
+                slide.style.transform = 'translatex(-1600px)';
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove('active');
+                }
+                this.classList.add('active');
+            }
+
+            btn[3].onclick = function(){
+                slide.style.transform = 'translatex(-2400px)';
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove('active');
+                }
+                this.classList.add('active');
+            }
+
+        </script>
+        
+
+
+
+
+    </body>
+
+</html>
