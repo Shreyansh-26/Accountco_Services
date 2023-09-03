@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
  
 *{
     padding: 0;
@@ -9,6 +9,56 @@ body{
     background-color: #12172b;
     font-family: 'Poppins', sans-serif;
 }
+
+/* .button-59 {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #fff;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 35px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  } */
+  
+  /* .button-59:focus {
+    color: black;
+  }
+  
+  .button-59:hover {
+    border-color: #55BA53;
+    color: #55BA53;
+    fill: #55BA53;
+  }
+  
+  .button-59:active {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+  }
+  
+  @media (min-width: 768px) {
+    .button-59 {
+      min-width: 170px;
+    }
+  } */
 
 .container{
     margin: 20px 40px;
@@ -23,7 +73,7 @@ body{
 
 .heading span{
     font-style: italic;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .profiles{
@@ -52,17 +102,20 @@ body{
 .user-name{
     margin-top: 30px;
     font-size: 35px;
+    font-weight: 600;
 }
 
 .profile h5{
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 3px;
     color: #ccc;
 }
 
 .profile p{
     font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
     margin-top: 20px;
     text-align: justify;
 }
@@ -102,5 +155,96 @@ body{
 
     .profile p{
         margin: 20px 10px 80px 10px;
+    }
+}
+
+/* Reset some default styles for the body and navbar */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #d3d4d6; /* Set the background color of the navbar */
+    color: #0a2940; /* Set the text color to white */
+    display: flex; /* Make navbar items display horizontally */
+    justify-content: space-between; /* Space out the logo and nav links */
+    align-items: center; /* Center items vertically within the navbar */
+    padding: 10px 20px; /* Add some padding to the navbar */
+}
+
+.navbar img {
+    height: 95px; /* Adjust the height of the logo as needed */
+    width: 120px;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #0a2940; /* Set link color to white */
+    margin-right: 20px; /* Add space between links */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none; /* Initially hide the menu icon */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Style the navbar links on hover */
+.navbar a:hover {
+    text-decoration: underline; /* Add an underline on hover */
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: flex; /* Display the menu icon when screen size is smaller */
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links */
+    }
+
+    /* Keyframes animation for showing/hiding navigation links */
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideOut {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Apply animation to the navigation links */
+    .nav-links.show {
+        animation: slideIn 0.5s forwards;
+    }
+
+    .nav-links.hide {
+        animation: slideOut 0.5s forwards;
+    }
+
+    /* Toggle animation on menu icon click */
+    .menu-icon.active + .nav-links {
+        display: flex;
     }
 }
