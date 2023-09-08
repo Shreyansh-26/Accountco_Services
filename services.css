@@ -9,7 +9,7 @@ body{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/sean-pollock-PhYq704ffdA-unsplash.jpg)no-repeat fixed center center/cover;
     width: 100%;
     height: 100vh;
-    overflow:hidden;
+    
 }
 
 /* .button-59 {
@@ -181,7 +181,7 @@ button:hover{
 
 .container h1{
     text-align: center;
-    padding-top: 6%;
+    padding-top: 10%;
     margin-bottom: 60px;
     font-weight: 600;
     position: relative;
@@ -202,8 +202,9 @@ button:hover{
 
 .row{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     grid-gap: 30px;
+    padding-top: 4%;
 } 
 
 .service{
@@ -327,4 +328,35 @@ body {
   .menu-icon.active + .nav-links {
       display: flex;
   }
+}
+
+footer {
+  background-color: #0A2940;
+  color: #fff;
+  text-align: center;
+  padding: 35px 0px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#top_p{
+  font-size: 17px;
+}
+
+#mid_p{
+  padding-top: 6px;
+  font-size: 17px;
+}
+
+#low_p{
+  padding-top: 6px;
+  font-size: 17px;
 }

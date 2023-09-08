@@ -246,3 +246,34 @@ body {
         display: flex;
     }
 }
+
+footer {
+    background-color: #0A2940;
+    color: #fff;
+    text-align: center;
+    padding: 35px 0px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  #top_p{
+    font-size: 17px;
+  }
+  
+  #mid_p{
+    padding-top: 6px;
+    font-size: 17px;
+  }
+  
+  #low_p{
+    padding-top: 6px;
+    font-size: 17px;
+  }
